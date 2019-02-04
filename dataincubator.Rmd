@@ -33,6 +33,7 @@ s.fb = ggplot(starbucks.fb, aes(x = time, y = likes)) +
   geom_line(size = 1, color = "blue") + xlab("Time")+ylab("Starbucks Likes")
 grid.arrange(s.lkd, s.fb, nrow = 2)
 ```
+
 From the plot, we can infer that at the beginning of 2018, starbucks social media popularity didn't perform as well as the number of employees. There might be some unknown variables which has effected badly their social media presence. 
 
 For the next plot we pick another well known company "McDonalds" which has a siginificant presence in the social media. We draw similar plot. 
@@ -50,6 +51,7 @@ m.fb = ggplot(mcdonalds.fb, aes(x = time, y = likes)) +
   geom_line(size = 1, color = "blue") + xlab("Time")+ylab("McDonald's Likes")
 grid.arrange(m.lkd, m.fb, nrow = 2)
 ```
+
 For Mcdonald's, the employee growth and social media growth looks highly correlated. 
 
 It would be an interesting question how this number of employees and social media popularity are correlated for other medium to small scale companies. 
